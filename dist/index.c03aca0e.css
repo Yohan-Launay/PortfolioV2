@@ -157,6 +157,13 @@ ul li {
   min-height: 100vh;
 }
 
+#projects #waves_projects {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 #about {
   color: #fff;
   background: #252525;
@@ -174,28 +181,16 @@ ul li {
 
 #about .about_text {
   text-align: justify;
+  flex-wrap: wrap;
   font-family: Arial, sans-serif;
   font-size: 4vw;
   font-weight: bold;
   line-height: 95px;
+  display: flex;
 }
 
-#about {
-  text-align: center;
-  padding: 50px;
-}
-
-.about_text p {
-  opacity: 0;
-  white-space: nowrap;
-  animation: 2s forwards revealText;
-  overflow: hidden;
-}
-
-@keyframes revealText {
-  to {
-    opacity: 1;
-  }
+#about .about_text div {
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=index.c03aca0e.css.map */

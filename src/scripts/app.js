@@ -1,2 +1,1 @@
-console.log("hello world !")
-
+import about from "./about";

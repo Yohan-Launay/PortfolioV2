@@ -16,23 +16,13 @@
     font-size: 4vw;
     text-align: justify;
     line-height: 95px;
+    display: flex;
+    flex-wrap: wrap;
+    div {
+      padding-right: 15px;
+    }
   }
 }
 
-#about {
-  text-align: center;
-  padding: 50px;
-}
 
-.about_text p {
-  opacity: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: revealText 2s forwards;
-}
 
-@keyframes revealText {
-  to {
-    opacity: 1;
-  }
-}
