@@ -1,5 +1,38 @@
 #about {
-  background: #181818;
+  background: #252525;
   color: white;
   min-height: 100vh;
+  font-family: DrukText, sans-serif;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2 {
+    font-size: 4em;
+  }
+  .about_text {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 4vw;
+    text-align: justify;
+    line-height: 95px;
+  }
+}
+
+#about {
+  text-align: center;
+  padding: 50px;
+}
+
+.about_text p {
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: revealText 2s forwards;
+}
+
+@keyframes revealText {
+  to {
+    opacity: 1;
+  }
 }

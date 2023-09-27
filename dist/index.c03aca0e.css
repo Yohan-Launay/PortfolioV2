@@ -3,14 +3,14 @@
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
 * nav {
   color: gray;
-  z-index: 1;
+  z-index: 2;
   justify-content: space-around;
   width: 100%;
+  font-family: Arial, sans-serif;
   display: flex;
   position: fixed;
   top: 0;
@@ -70,12 +70,18 @@ ul li {
   list-style: none;
 }
 
+@font-face {
+  font-family: DrukText;
+  src: url("DrukText-Bold-Trial.469959c2.otf");
+}
+
 #home {
   color: #fff;
-  background: #460909;
+  background: #a44f27;
   align-items: center;
   min-height: 100vh;
   padding: 0 5em;
+  font-family: DrukText, sans-serif;
   display: flex;
 }
 
@@ -95,28 +101,34 @@ ul li {
   left: 400px;
 }
 
+#home #waves {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 #home h1 {
+  text-align: center;
+  z-index: 1;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+  line-height: 95px;
   display: flex;
 }
 
 #home h1 span {
-  padding: .2em 0;
+  text-transform: uppercase;
+  font-size: 5em;
+  font-weight: bold;
 }
 
-#home h1 span:first-child {
-  font-size: 1em;
-  font-weight: normal;
+#home h1 span.name {
+  letter-spacing: 8px;
 }
 
-#home h1 span:nth-child(2) {
-  font-size: 2em;
-}
-
-#home h1 span:nth-child(4) {
-  font-size: .7em;
-  font-weight: normal;
+#home h1 span.dev {
+  letter-spacing: -6px;
 }
 
 @keyframes svg-animate {
@@ -147,8 +159,43 @@ ul li {
 
 #about {
   color: #fff;
-  background: #181818;
+  background: #252525;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
+  padding: 1.5em;
+  font-family: DrukText, sans-serif;
+  display: flex;
+}
+
+#about h2 {
+  font-size: 4em;
+}
+
+#about .about_text {
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  font-size: 4vw;
+  font-weight: bold;
+  line-height: 95px;
+}
+
+#about {
+  text-align: center;
+  padding: 50px;
+}
+
+.about_text p {
+  opacity: 0;
+  white-space: nowrap;
+  animation: 2s forwards revealText;
+  overflow: hidden;
+}
+
+@keyframes revealText {
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=index.c03aca0e.css.map */
