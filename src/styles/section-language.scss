@@ -1,0 +1,38 @@
+#language {
+  background: #a44f27;
+  color: white;
+  min-height: 100vh;
+  font-family: DrukText, sans-serif;
+  #waves_language {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    filter: drop-shadow(0 10px 6px #0006);
+  }
+  .contenu_language {
+    padding: 1.5em;
+    h2 {
+      font-size: 4em;
+    }
+    &_logo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 500px;
+      backdrop-filter: blur(6.5px);
+      background: #ffffffa6;
+      border-radius: 10px;
+      margin: 2em 0;
+      box-shadow: 0 8px 32px #bababa4a;
+      img {
+        width: 200px;
+        border-radius: 100%;
+        padding: 1em;
+        &:first-child {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
