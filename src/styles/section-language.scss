@@ -10,27 +10,34 @@
     width: 100vw;
     filter: drop-shadow(0 10px 6px #0006);
   }
+  h2 {
+    font-size: 4.5em;
+    position: relative;
+    bottom: 70px;
+  }
   .contenu_language {
-    padding: 1.5em;
-    h2 {
-      font-size: 4em;
-    }
-    &_logo {
+    &_body {
+      padding: 0 2vw;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      width: 500px;
-      backdrop-filter: blur(6.5px);
-      background: #ffffffa6;
-      border-radius: 10px;
-      margin: 2em 0;
-      box-shadow: 0 8px 32px #bababa4a;
-      img {
+      div {
+        background: rgba(255, 255, 255, 0.56);
+        box-shadow: 0 8px 32px rgba(18, 18, 18, 0.29);
+        backdrop-filter: blur( 6.5px );
+        border-radius: 25px;
         width: 200px;
-        border-radius: 100%;
+        height: 100px;
         padding: 1em;
-        &:first-child {
-          border-radius: 0;
+        margin: 0.5em;
+        font-size: 2em;
+        transition: 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          border-radius: 35px;
+
         }
       }
     }
