@@ -37,7 +37,9 @@
         justify-content: center;
         &:hover {
           border-radius: 35px;
-
+        }
+        img {
+          width: 100%;
         }
       }
     }
