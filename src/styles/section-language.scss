@@ -3,6 +3,11 @@
   color: white;
   min-height: 100vh;
   font-family: DrukText, sans-serif;
+  #waves_bottom {
+    position: relative;
+    bottom: -5px;
+    width: 100%;
+  }
   #waves_language {
     position: relative;
     top: 0;
@@ -39,7 +44,7 @@
           margin: 1vw;
         }
         .node {
-          width: 33%;
+          width: 40%;
           margin: auto;
           img {
             width: 100%;

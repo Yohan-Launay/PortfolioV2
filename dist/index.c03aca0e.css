@@ -218,6 +218,12 @@ ul li {
   font-family: DrukText, sans-serif;
 }
 
+#language #waves_bottom {
+  width: 100%;
+  position: relative;
+  bottom: -5px;
+}
+
 #language #waves_language {
   filter: drop-shadow(0 10px 6px #0006);
   width: 100vw;
@@ -261,7 +267,7 @@ ul li {
 }
 
 #language .contenu_language_body_card .node {
-  width: 33%;
+  width: 40%;
   margin: auto;
 }
 
@@ -299,6 +305,49 @@ ul li {
 .reveal.reveal-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+#contact {
+  background: #252525;
+  height: 50vh;
+  font-family: Arial, sans-serif;
+}
+
+#contact h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 4em;
+}
+
+#contact .contact_body {
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+  padding: 10vh 0;
+  display: flex;
+}
+
+#contact .contact_body p {
+  color: #fff;
+  width: 50%;
+  padding-right: 50px;
+  font-size: 1.8em;
+}
+
+#contact .contact_body_link {
+  -webkit-backdrop-filter: blur(6.5px);
+  backdrop-filter: blur(6.5px);
+  background: #ffffffa6;
+  border-radius: 10px;
+  margin: 1em;
+  padding: 1em;
+  display: flex;
+  box-shadow: 0 8px 32px #bababa4a;
+}
+
+#contact .contact_body_link img {
+  width: 5vw;
 }
 
 /*# sourceMappingURL=index.c03aca0e.css.map */
