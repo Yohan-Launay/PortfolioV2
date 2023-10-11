@@ -575,12 +575,14 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"7E6e0":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _home = require("./home");
+var _homeDefault = parcelHelpers.interopDefault(_home);
 var _about = require("./about");
 var _aboutDefault = parcelHelpers.interopDefault(_about);
 var _language = require("./language");
 var _languageDefault = parcelHelpers.interopDefault(_language);
 
-},{"./about":"6rJJi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./language":"1mJCG"}],"6rJJi":[function(require,module,exports) {
+},{"./about":"6rJJi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./language":"1mJCG","./home":"gmSFj"}],"6rJJi":[function(require,module,exports) {
 const paragraphs = document.querySelectorAll(".about_text");
 paragraphs.forEach((paragraph)=>{
     const text = paragraph.textContent.trim();
@@ -651,6 +653,30 @@ const observer = new IntersectionObserver(revealCallback, {
     threshold: 0.5
 });
 observer.observe(elementToObserve);
+
+},{}],"gmSFj":[function(require,module,exports) {
+document.addEventListener("DOMContentLoaded", function() {
+    // Sélectionnez l'élément à animer
+    var animatedTitle = document.getElementById("animated_title");
+    // Configurez l'animation de départ (en dehors de l'écran)
+    animatedTitle.style.opacity = 0;
+    animatedTitle.style.transform = "translateY(50px)";
+    // Créez une animation avec Element.animate()
+    animatedTitle.animate([
+        {
+            opacity: 0,
+            transform: "translateY(300px)"
+        },
+        {
+            opacity: 1,
+            transform: "translateY(0)"
+        }
+    ], {
+        duration: 2000,
+        easing: "ease-out",
+        fill: "forwards"
+    });
+});
 
 },{}]},["apN6l","7E6e0"], "7E6e0", "parcelRequire94c2")
 

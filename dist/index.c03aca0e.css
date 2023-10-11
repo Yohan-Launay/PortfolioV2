@@ -7,7 +7,7 @@
 
 * nav {
   color: gray;
-  z-index: 2;
+  z-index: 5;
   justify-content: space-around;
   width: 100%;
   font-family: Arial, sans-serif;
@@ -85,6 +85,10 @@ ul li {
   display: flex;
 }
 
+#home #animated_title {
+  z-index: 1;
+}
+
 #home #svg_home {
   width: 600px;
   animation: 2.5s linear infinite alternate svg-animate;
@@ -103,6 +107,7 @@ ul li {
 
 #home #waves {
   filter: drop-shadow(0 -10px 6px #0006);
+  z-index: 2;
   width: 100vw;
   position: absolute;
   bottom: 0;
@@ -332,7 +337,7 @@ ul li {
   color: #fff;
   width: 50%;
   padding-right: 50px;
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 #contact .contact_body_link {
@@ -340,14 +345,24 @@ ul li {
   backdrop-filter: blur(6.5px);
   background: #ffffffa6;
   border-radius: 10px;
-  margin: 1em;
-  padding: 1em;
+  align-items: center;
+  margin: .8em;
+  padding: .8em;
   display: flex;
   box-shadow: 0 8px 32px #bababa4a;
 }
 
-#contact .contact_body_link img {
-  width: 5vw;
+#contact .contact_body_link a {
+  margin: 10px;
+}
+
+#contact .contact_body_link a img {
+  width: 4vw;
+}
+
+#contact .contact_body_link a i {
+  color: #252525;
+  font-size: 4em;
 }
 
 /*# sourceMappingURL=index.c03aca0e.css.map */
