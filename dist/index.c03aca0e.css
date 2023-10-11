@@ -75,6 +75,16 @@ ul li {
   src: url("DrukText-Bold-Trial.469959c2.otf");
 }
 
+footer {
+  color: silver;
+  background: #252525;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
 #home {
   color: #fff;
   background: #a44f27;
@@ -155,21 +165,6 @@ ul li {
   to {
     top: 190px;
   }
-}
-
-#projects {
-  color: #fff;
-  background: #000031;
-  min-height: 100vh;
-  font-family: DrukText, sans-serif;
-}
-
-#projects #waves_projects {
-  filter: drop-shadow(0 10px 6px #0006);
-  width: 100vw;
-  position: relative;
-  top: 0;
-  left: 0;
 }
 
 #about {

@@ -71,3 +71,13 @@ ul {
   font-family: 'DrukText';
   src: url(../fonts/DrukText-Bold-Trial.otf) ;
 }
+
+footer {
+  background: #252525;
+  color: #c0c0c0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+}

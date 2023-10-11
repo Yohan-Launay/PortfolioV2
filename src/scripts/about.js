@@ -20,7 +20,7 @@ function handleScroll() {
         const windowHeight = window.innerHeight;
         if (rect.bottom >= 0 && rect.top <= windowHeight) {
             const centerY = (rect.top + rect.bottom) / 3;
-            const opacity = 1 - Math.abs(centerY - windowHeight / 4) / (windowHeight / 2);
+            const opacity = 1 - Math.abs(centerY - windowHeight / 4) / (windowHeight / 3);
             letter.style.opacity = opacity;
         } else {
             letter.style.opacity = 0;
