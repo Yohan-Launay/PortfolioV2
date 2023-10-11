@@ -577,8 +577,10 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _about = require("./about");
 var _aboutDefault = parcelHelpers.interopDefault(_about);
+var _language = require("./language");
+var _languageDefault = parcelHelpers.interopDefault(_language);
 
-},{"./about":"6rJJi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6rJJi":[function(require,module,exports) {
+},{"./about":"6rJJi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./language":"1mJCG"}],"6rJJi":[function(require,module,exports) {
 const paragraphs = document.querySelectorAll(".about_text");
 paragraphs.forEach((paragraph)=>{
     const text = paragraph.textContent.trim();
@@ -588,26 +590,19 @@ paragraphs.forEach((paragraph)=>{
         return `<div class="word">${letters.map((letter)=>`<span class="letter">${letter}</span>`).join("")}</div>`;
     }).join(" ");
 });
-// Sélectionne tous les éléments avec la classe "letter"
 const letters = document.querySelectorAll(".letter");
 function handleScroll() {
     letters.forEach((letter, index)=>{
         const rect = letter.getBoundingClientRect();
         const windowHeight = window.innerHeight;
-        // Vérifie si la lettre est dans la fenêtre visible
         if (rect.bottom >= 0 && rect.top <= windowHeight) {
-            // Calcule la position de la lettre par rapport au milieu de la fenêtre
             const centerY = (rect.top + rect.bottom) / 3;
-            // Calcul de l'opacité en fonction de la position par rapport au milieu de la fenêtre
             const opacity = 1 - Math.abs(centerY - windowHeight / 4) / (windowHeight / 2);
-            // Applique l'opacité calculée
             letter.style.opacity = opacity;
-        } else // Si la lettre n'est pas dans la fenêtre, garde son opacité à 0
-        letter.style.opacity = 0;
+        } else letter.style.opacity = 0;
     });
 }
 window.addEventListener("scroll", handleScroll);
-// Appelle la fonction handleScroll une fois au chargement de la page pour vérifier l'état initial
 handleScroll();
 
 },{}],"gkKU3":[function(require,module,exports) {
@@ -639,6 +634,23 @@ exports.export = function(dest, destName, get) {
         get: get
     });
 };
+
+},{}],"1mJCG":[function(require,module,exports) {
+const elementToObserve = document.querySelector(".contenu_language_body");
+const revealCallback = (entries, observer)=>{
+    entries.forEach((entry)=>{
+        if (entry.isIntersecting) {
+            entry.target.classList.add("reveal-visible");
+            observer.unobserve(entry.target);
+        }
+    });
+};
+const observer = new IntersectionObserver(revealCallback, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5
+});
+observer.observe(elementToObserve);
 
 },{}]},["apN6l","7E6e0"], "7E6e0", "parcelRequire94c2")
 

@@ -280,9 +280,25 @@ ul li {
 
 #language .contenu_language_body_text p {
   text-align: inherit;
+  color: #0000;
+  background-image: linear-gradient(#ffd9bd, #f60);
+  -webkit-background-clip: text;
+  background-clip: text;
   font-size: 1.8em;
   font-style: normal;
   line-height: 45px;
+  display: inline;
+}
+
+.reveal {
+  opacity: 0;
+  transition: opacity 1.5s, transform .4s;
+  transform: translateY(20px);
+}
+
+.reveal.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /*# sourceMappingURL=index.c03aca0e.css.map */

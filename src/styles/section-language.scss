@@ -58,8 +58,22 @@
           font-size: 1.8em;
           font-style: normal;
           line-height: 45px;
+          background-image: linear-gradient(to bottom, #ffd9bd, #ff6600);
+          background-clip: text;
+          color: transparent;
+          display: inline;
         }
       }
     }
   }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease, transform 0.4s ease;
+}
+.reveal.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
