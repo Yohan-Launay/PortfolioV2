@@ -656,12 +656,9 @@ observer.observe(elementToObserve);
 
 },{}],"gmSFj":[function(require,module,exports) {
 document.addEventListener("DOMContentLoaded", function() {
-    // Sélectionnez l'élément à animer
-    var animatedTitle = document.getElementById("animated_title");
-    // Configurez l'animation de départ (en dehors de l'écran)
+    let animatedTitle = document.getElementById("animated_title");
     animatedTitle.style.opacity = 0;
     animatedTitle.style.transform = "translateY(50px)";
-    // Créez une animation avec Element.animate()
     animatedTitle.animate([
         {
             opacity: 0,
