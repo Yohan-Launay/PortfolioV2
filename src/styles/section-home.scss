@@ -37,16 +37,15 @@
     text-align: center;
     z-index: 1;
     width: 100%;
-    line-height: 95px;
+    line-height: 80px;
     span {
       font-weight: bold;
-      font-size: 5em;
       text-transform: uppercase;
       &.name {
-        letter-spacing: 8px;
+        font-size: 5em;
       }
       &.dev {
-        letter-spacing: -6px;
+        font-size: 3em;
       }
     }
   }
