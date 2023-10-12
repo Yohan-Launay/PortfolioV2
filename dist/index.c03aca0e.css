@@ -126,7 +126,7 @@ footer {
 #home #waves {
   filter: drop-shadow(0 -10px 6px #0006);
   z-index: 2;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -180,7 +180,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  padding: 5em 1.5em;
   font-family: Arial, sans-serif;
   display: flex;
 }
@@ -435,10 +434,6 @@ footer {
     left: 10px;
   }
 
-  #home {
-    padding: 0;
-  }
-
   #home h1 {
     line-height: 60px;
   }
@@ -449,6 +444,11 @@ footer {
 
   #home h1 span.dev {
     font-size: 2em;
+  }
+
+  #about {
+    min-height: 70vh;
+    padding: 0 20px;
   }
 
   #about .about_text {

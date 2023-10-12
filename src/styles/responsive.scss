@@ -60,8 +60,6 @@
   }
 
   #home {
-    padding: 0;
-
     h1 {
       line-height: 60px;
       span.name {
@@ -74,9 +72,12 @@
   }
 
   #about {
+    min-height: 70vh;
+    padding: 0 20px;
     .about_text {
       font-size: 3em;
       line-height: 7vh;
+
     }
   }
 
