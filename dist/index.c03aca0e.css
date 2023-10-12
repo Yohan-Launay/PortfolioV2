@@ -57,6 +57,10 @@
   transform: scaleX(1);
 }
 
+body {
+  background: #252525;
+}
+
 .nav_right {
   align-items: center;
   padding: 0;
@@ -435,17 +439,6 @@ footer {
     padding: 0;
   }
 
-  #home #svg_home_large {
-    width: 70vw;
-    left: 0;
-  }
-
-  #home #svg_home {
-    width: 75vw;
-    top: 30%;
-    left: 40%;
-  }
-
   #home h1 {
     line-height: 60px;
   }
@@ -465,6 +458,10 @@ footer {
 
   #language h2 {
     margin-top: 5vh;
+  }
+
+  #language #waves_language {
+    top: -2px;
   }
 
   #language .contenu_language_body {
@@ -501,6 +498,12 @@ footer {
 @media (width <= 570px) {
   #home {
     padding: 0;
+  }
+
+  #home #svg_home_large {
+    width: 30vh;
+    top: 70%;
+    left: 0;
   }
 
   #home h1 {

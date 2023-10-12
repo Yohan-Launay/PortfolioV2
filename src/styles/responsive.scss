@@ -1,4 +1,5 @@
 @media (max-width: 760px) {
+
   nav {
     display: block;
     .burger_input {
@@ -60,15 +61,7 @@
 
   #home {
     padding: 0;
-    #svg_home_large {
-      width: 70vw;
-      left: 0;
-    }
-    #svg_home {
-      width: 75vw;
-      top: 30%;
-      left: 40%;
-    }
+
     h1 {
       line-height: 60px;
       span.name {
@@ -90,6 +83,9 @@
   #language {
     h2 {
       margin-top: 5vh;
+    }
+    #waves_language {
+      top: -2px;
     }
     .contenu_language {
       &_body {
@@ -131,6 +127,14 @@
 @media (max-width: 570px) {
   #home {
     padding: 0;
+    #svg_home_large {
+      top: 70%;
+      left: 0;
+      width: 30vh;
+    }
+    #svg_home {
+
+    }
     h1 {
       line-height: 40px;
       span.name {
