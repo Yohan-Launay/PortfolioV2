@@ -11,16 +11,16 @@
   }
   #svg_home {
     position: absolute;
-    width: 600px;
-    left: 700px;
-    top: 200px;
+    width: 40vw;
+    left: 50%;
+    top: 20%;
     animation: svg-animate linear 2.5s infinite alternate;
   }
   #svg_home_large {
     position: absolute;
-    width: 400px;
-    left: 400px;
-    top: 200px;
+    width: 40vw;
+    left: 20%;
+    top: 20%;
     animation: svg-animate-large linear 3s infinite alternate;
   }
   #waves {

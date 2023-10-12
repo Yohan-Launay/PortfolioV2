@@ -12,6 +12,12 @@
     color: grey;
     z-index: 5;
     font-family: Arial, sans-serif;
+    .burger_input {
+      display: none;
+    }
+    .burger_icon {
+      display: none;
+    }
     ul {
       display: flex;
       background: rgba( 255, 255, 255, 0.65 );
