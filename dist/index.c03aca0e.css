@@ -544,6 +544,7 @@ footer {
   }
 
   #language .contenu_language_body_text p {
+    padding-top: 1em;
     font-size: 1.5em;
     line-height: 30px;
   }
