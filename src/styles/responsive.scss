@@ -15,6 +15,7 @@
         }
       }
     }
+
     .burger_icon {
       display: flex;
       z-index: 5;
@@ -191,10 +192,10 @@
 
 @keyframes menu_open {
   from {
-    top: -400px;
+    opacity: 0;
   }
   to {
-    top: 0;
+    opacity: 1;
   }
 }
 
