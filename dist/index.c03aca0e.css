@@ -132,6 +132,14 @@ footer {
   left: 0;
 }
 
+#home .img_yohan {
+  filter: grayscale(40%);
+  opacity: .8;
+  position: absolute;
+  bottom: 100px;
+  left: -200px;
+}
+
 #home h1 {
   text-align: center;
   z-index: 1;
