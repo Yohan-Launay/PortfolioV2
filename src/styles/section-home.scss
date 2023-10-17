@@ -33,10 +33,11 @@
   }
   .img_yohan {
     position: absolute;
-    bottom: 100px;
-    left: -200px;
+    bottom: 10vh;
+    left: -10vw;
     filter: grayscale(40%);
     opacity: 0.80;
+    width: 50vw;
   }
   h1 {
     display: flex;

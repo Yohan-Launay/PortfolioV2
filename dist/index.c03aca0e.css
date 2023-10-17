@@ -135,9 +135,10 @@ footer {
 #home .img_yohan {
   filter: grayscale(40%);
   opacity: .8;
+  width: 50vw;
   position: absolute;
-  bottom: 100px;
-  left: -200px;
+  bottom: 10vh;
+  left: -10vw;
 }
 
 #home h1 {
@@ -455,6 +456,12 @@ footer {
     font-size: 2em;
   }
 
+  #home .img_yohan {
+    width: 100%;
+    bottom: 0;
+    left: -20vw;
+  }
+
   #about {
     min-height: 70vh;
     padding: 0 20px;
@@ -525,6 +532,12 @@ footer {
 
   #home h1 span.dev {
     font-size: 1.5em;
+  }
+
+  #home .img_yohan {
+    width: 100vw;
+    bottom: 0;
+    left: 0;
   }
 
   #about h2 {
