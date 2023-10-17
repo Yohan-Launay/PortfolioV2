@@ -78,7 +78,7 @@
   }
 
   #about {
-    min-height: 70vh;
+    height: 70vh;
     padding: 0 20px;
     .about_text {
       font-size: 3em;
@@ -92,6 +92,7 @@
       margin-top: 5vh;
     }
     #waves_language {
+      position: relative;
       top: -2px;
     }
     .contenu_language {
@@ -134,13 +135,13 @@
 @media (max-width: 570px) {
   #home {
     padding: 0;
-    #svg_home_large {
+    .svg_home_large {
       top: 70%;
       left: 0;
       width: 30vh;
     }
-    #svg_home {
-
+    .waves {
+      bottom: -40px;
     }
     h1 {
       line-height: 40px;
