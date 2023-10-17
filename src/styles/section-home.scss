@@ -9,21 +9,21 @@
   #animated_title {
     z-index: 1;
   }
-  #svg_home {
+  .svg_home {
     position: absolute;
     width: 40vw;
     left: 50%;
     top: 20%;
     animation: svg-animate linear 2.5s infinite alternate;
   }
-  #svg_home_large {
+  .svg_home_large {
     position: absolute;
     width: 40vw;
     left: 20%;
     top: 20%;
     animation: svg-animate-large linear 3s infinite alternate;
   }
-  #waves {
+  .waves {
     position: absolute;
     bottom: 0;
     left: 0;
